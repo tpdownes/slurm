@@ -17,6 +17,8 @@ LimitNOFILE=131072
 LimitMEMLOCK=infinity
 LimitSTACK=infinity
 Delegate=yes
+Restart=on-failure
+RestartSec=15
 @SYSTEMD_TASKSMAX_OPTION@
 
 # Uncomment the following lines to disable logging through journald.
